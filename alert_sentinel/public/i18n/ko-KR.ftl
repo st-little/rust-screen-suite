@@ -1,0 +1,95 @@
+# Alert component
+alert_start_monitoring = 모니터링 시작
+alert_stop_monitoring = 모니터링 중지
+alert_history = 알림 감지 기록
+alert_no_history = 감지 기록이 없습니다
+
+# Tooltip
+alert_tooltip_start = 알림 감지를 시작합니다
+alert_tooltip_stop = 알림 감지를 중지합니다
+alert_tooltip_clear_history = 알림 감지 기록을 삭제합니다
+
+# Toast
+alert_toast_started = 알림 감지를 시작했습니다
+alert_toast_stopped = 알림 감지를 중지했습니다
+alert_toast_error = 알림 감지 중 오류가 발생했습니다
+alert_toast_cleared = 알림 감지 기록을 삭제했습니다
+
+# Setting component
+setting_settings = 설정
+setting_save = 저장
+setting_cancel = 취소
+setting_tab_general = 일반
+setting_tab_templates = 템플릿
+setting_tab_alerts = 알림
+setting_tab_monitor = 모니터링
+setting_tab_notification = 알림
+setting_tab_license = 라이선스
+setting_language = 언어
+setting_timezone = 시간대
+setting_theme = 테마
+setting_dark = 다크
+setting_monitor_interval = 모니터링 간격({ $ms }밀리초)
+setting_monitor_skip_duration = 감지 후 대기 시간({ $ms }밀리초)
+setting_monitor_threshold = 임계값({ $value })
+setting_monitor_scale = 리사이즈 스케일({ $value })
+setting_template_airdrop = 에어드롭 감지됨
+setting_template_heli = 순찰 헬기 생성됨
+setting_template_ch47 = CH-47 생성됨
+setting_template_cargo = 카고쉽 생성됨
+setting_template_shovel = 삽 구덩이 온라인
+setting_template_oil_rig_large = 대형 오일 리그 온라인
+setting_template_oil_rig_small = 소형 오일 리그 온라인
+setting_preview = 미리보기
+setting_not_set = 미설정
+setting_set = 설정됨
+setting_desc_templates = 각 알림의 이미지 템플릿을 설정합니다. 설정 후 게임 내 알림 감지에 사용됩니다.
+setting_desc_alerts = 모니터링할 알림을 설정합니다. *모니터링할 알림마다 템플릿을 설정하세요.
+setting_desc_monitor = 모니터링 설정을 조정합니다. 간격과 임계값을 조정해 감지 정확도를 높일 수 있습니다.
+setting_desc_notification = 알림 설정을 조정합니다. 소리, Discord 등 알림 수신 방법을 커스터마이즈할 수 있습니다.
+setting_desc_license = 본 애플리케이션에서 사용하는 라이브러리의 라이선스 목록입니다.
+setting_btn_close = 닫기
+setting_btn_preview = 미리보기
+setting_btn_open_rust_licenses = Rust 라이브러리 라이선스 열기
+setting_btn_open_npm_licenses = Node 모듈 라이선스 열기
+setting_btn_open_other_licenses = 기타 라이선스 열기
+setting_msg_save_success = 설정이 저장되었습니다
+setting_msg_save_error = 설정 저장에 실패했습니다
+setting_msg_image_load_error = 이미지를 불러올 수 없습니다.
+setting_placeholder_discord_webhook = https://discord.com/api/webhooks/...
+setting_placeholder_discord_username = 알림용 사용자명
+setting_placeholder_discord_avatar_url = https://example.com/avatar.png
+setting_undefined_tab = 정의되지 않은 탭입니다.
+setting_timezone_Asia_Tokyo = 일본
+setting_timezone_Asia_Shanghai = 중국
+setting_timezone_Asia_Seoul = 한국
+setting_timezone_Asia_Singapore = 싱가포르
+setting_timezone_Asia_Bangkok = 태국
+setting_timezone_Europe_London = 영국
+setting_timezone_Europe_Paris = 프랑스
+setting_timezone_Europe_Berlin = 독일
+setting_timezone_Europe_Moscow = 러시아
+setting_timezone_America_New_York = 미국 동부
+setting_timezone_America_Chicago = 미국 중부
+setting_timezone_America_Denver = 미국 산악
+setting_timezone_America_Los_Angeles = 미국 서부
+setting_timezone_America_Sao_Paulo = 브라질
+setting_timezone_Australia_Sydney = 호주
+setting_timezone_Pacific_Auckland = 뉴질랜드
+setting_timezone_UTC = 협정 세계시
+setting_notification_sound = 알림음
+setting_notification_volume = 볼륨 ({$value}%)
+setting_notification_discord = Discord
+setting_notification_webhook_url = Webhook URL
+setting_notification_username = 사용자명
+setting_notification_avatar_url = 아바타 URL
+
+# Footer component
+footer_monitoring = 모니터링 중...
+footer_stopped = 중지됨
+
+# Header component
+header_open_settings = 설정 열기
+header_open_help = 도움말 열기
+header_notification_history = 알림 기록
+header_app_name = Alert Sentinel

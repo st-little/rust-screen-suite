@@ -1,0 +1,95 @@
+# Alert component
+alert_start_monitoring = 監視開始
+alert_stop_monitoring = 監視停止
+alert_history = アラート検知履歴
+alert_no_history = 検知履歴はありません
+
+# Tooltip
+alert_tooltip_start = アラートの監視を開始します
+alert_tooltip_stop = アラートの監視を停止します
+alert_tooltip_clear_history = アラート検知履歴を削除します
+
+# Toast
+alert_toast_started = アラートの監視を開始しました
+alert_toast_stopped = アラートの監視を停止しました
+alert_toast_error = アラート監視中にエラーが発生しました
+alert_toast_cleared = アラート検知履歴を削除しました
+
+# Setting component
+setting_settings = 設定
+setting_save = 保存
+setting_cancel = キャンセル
+setting_tab_general = 一般
+setting_tab_templates = テンプレート
+setting_tab_alerts = アラート
+setting_tab_monitor = 監視
+setting_tab_notification = 通知
+setting_tab_license = ライセンス
+setting_language = 言語
+setting_timezone = タイムゾーン
+setting_theme = テーマ
+setting_dark = ダーク
+setting_monitor_interval = 監視間隔 ({ $ms }ミリ秒)
+setting_monitor_skip_duration = 検知後のスキップ時間 ({ $ms }ミリ秒)
+setting_monitor_threshold = しきい値 ({ $value })
+setting_monitor_scale = リサイズスケール ({ $value })
+setting_template_airdrop = エアドロップが降下した
+setting_template_heli = パトロールヘリがスポーンした
+setting_template_ch47 = CH-47がスポーンした
+setting_template_cargo = カーゴシップがスポーンした
+setting_template_shovel = ショベルピットがオンラインになった
+setting_template_oil_rig_large = ラージオイルリグがオンラインになった
+setting_template_oil_rig_small = スモールオイルリグがオンラインになった
+setting_preview = プレビュー
+setting_not_set = 設定されていません
+setting_set = 設定されました
+setting_desc_templates = 各通知の画像テンプレートの設定を行います。設定後、ゲーム内での通知検知にこの画像を使用します。
+setting_desc_alerts = 監視するアラートの設定を行います。※監視するアラートは必ずテンプレートを設定してください。
+setting_desc_monitor = 監視の設定を行います。監視間隔やしきい値を調整することで、アラートの検知精度を向上させることができます。
+setting_desc_notification = 通知の設定を行います。通知音やDiscord連携など、アラート検知の通知を受信する方法をカスタマイズできます。
+setting_desc_license = 本アプリケーションで利用しているライブラリのライセンス一覧です。
+setting_btn_close = 閉じる
+setting_btn_preview = プレビュー
+setting_btn_open_rust_licenses = Rustクレートのライセンス一覧を開く
+setting_btn_open_npm_licenses = Nodeモジュールのライセンス一覧を開く
+setting_btn_open_other_licenses = その他ライセンス一覧を開く
+setting_msg_save_success = 設定を保存しました
+setting_msg_save_error = 設定の保存に失敗しました
+setting_msg_image_load_error = 画像を読み込めませんでした。
+setting_placeholder_discord_webhook = https://discord.com/api/webhooks/...
+setting_placeholder_discord_username = 通知を送るユーザー名
+setting_placeholder_discord_avatar_url = https://example.com/avatar.png
+setting_undefined_tab = 未定義のタブです。
+setting_timezone_Asia_Tokyo = 日本
+setting_timezone_Asia_Shanghai = 中国
+setting_timezone_Asia_Seoul = 韓国
+setting_timezone_Asia_Singapore = シンガポール
+setting_timezone_Asia_Bangkok = タイ
+setting_timezone_Europe_London = イギリス
+setting_timezone_Europe_Paris = フランス
+setting_timezone_Europe_Berlin = ドイツ
+setting_timezone_Europe_Moscow = ロシア
+setting_timezone_America_New_York = アメリカ東部
+setting_timezone_America_Chicago = アメリカ中部
+setting_timezone_America_Denver = アメリカ山岳部
+setting_timezone_America_Los_Angeles = アメリカ西部
+setting_timezone_America_Sao_Paulo = ブラジル
+setting_timezone_Australia_Sydney = オーストラリア
+setting_timezone_Pacific_Auckland = ニュージーランド
+setting_timezone_UTC = 協定世界時
+setting_notification_sound = 通知音
+setting_notification_volume = ボリューム ({$value}%)
+setting_notification_discord = Discord
+setting_notification_webhook_url = Webhook URL
+setting_notification_username = ユーザー名
+setting_notification_avatar_url = アバターURL
+
+# Footer component
+footer_monitoring = 監視中...
+footer_stopped = 停止中
+
+# Header component
+header_open_settings = 設定を開きます
+header_open_help = ヘルプをブラウザで開きます
+header_notification_history = 通知監視履歴
+header_app_name = Alert Sentinel

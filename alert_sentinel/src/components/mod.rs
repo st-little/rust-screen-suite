@@ -1,0 +1,16 @@
+pub mod alert;
+pub mod alert_detection_history;
+pub mod main_footer;
+pub mod main_header;
+pub mod settings;
+pub mod settings_alerts_tab;
+pub mod settings_footer;
+pub mod settings_general_tab;
+pub mod settings_header;
+pub mod settings_license_tab;
+pub mod settings_monitor_tab;
+pub mod settings_notification_tab;
+pub mod settings_preview_modal;
+pub mod settings_tab_button;
+pub mod settings_templates_tab;
+pub mod toasts;

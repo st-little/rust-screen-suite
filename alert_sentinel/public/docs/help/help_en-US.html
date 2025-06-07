@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert Monitoring Guide</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; line-height: 1.7; }
+        h1 { font-size: 1.7em; margin-bottom: 0.5em; }
+        h2 { font-size: 1.2em; margin-top: 2em; }
+        ol, ul { margin-left: 1.5em; }
+        li { margin-bottom: 0.4em; }
+        code { background: #f4f4f4; padding: 0.1em 0.4em; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Alert Monitoring Guide</h1>
+    <p>This guide explains how to set up the application using the "Airdrop Detected" alert as an example.</p>
+
+    <h2>Step 1: Prepare the Template</h2>
+    <ol>
+        <li>When the "Airdrop Detected" alert appears in Rust, take a screenshot of the game screen.</li>
+        <li>Crop the alert area from the screenshot and save it as an image file.</li>
+    </ol>
+
+    <h2>Step 2: Set Language and Timezone</h2>
+    <ol>
+        <li>Click the "Settings" icon in the header to open the settings screen.</li>
+        <li>Select the "General" tab from the sidebar.</li>
+        <li>Select your preferred language from the "Language" dropdown.</li>
+        <li>Select your timezone from the "Timezone" dropdown.</li>
+        <li>Click the "Save" button at the bottom of the screen to save your settings.</li>
+    </ol>
+
+    <h2>Step 3: Set the Template</h2>
+    <ol>
+        <li>Select the "Template" tab from the sidebar.</li>
+        <li>Click the "Choose File" button for "Airdrop Detected" and select the image you saved in Step 1.</li>
+        <li>Use the preview button on the right to confirm the image is correct.</li>
+        <li>Click the "Save" button.</li>
+    </ol>
+
+    <h2>Step 4: Select Alerts to Monitor</h2>
+    <ol>
+        <li>Select the "Alerts" tab from the sidebar.</li>
+        <li>Turn on the toggle for "Airdrop Detected".</li>
+        <li>Click the "Save" button.</li>
+    </ol>
+
+    <h2>Step 5: Adjust Monitoring Settings</h2>
+    <p>If alert detection does not work well, adjust the settings as follows:</p>
+    <ol>
+        <li>Select the "Monitoring" tab from the sidebar.</li>
+        <li>Adjust the detection interval (milliseconds) with the "Detection Interval" slider.</li>
+        <li>Adjust the skip time after detection (milliseconds) with the "Skip Time After Detection" slider.</li>
+        <li>Adjust the threshold for template matching with the "Threshold" slider.</li>
+        <li>You can adjust the "Resize Scale" slider to change the image downscaling ratio used for template matching (lower values speed up processing but may reduce detection accuracy).</li>
+        <li>Click the "Save" button.</li>
+    </ol>
+
+    <h2>Step 6: Set Up Notifications</h2>
+    <ol>
+        <li>Select the "Notifications" tab from the sidebar.</li>
+        <li>To play a notification sound when an alert is detected, turn on the "Notification Sound" toggle.</li>
+        <li>To use Discord notifications, turn on the "Discord" toggle and enter your Webhook URL (you can get the Webhook URL from your Discord server settings).</li>
+        <li>Click the "Save" button.</li>
+    </ol>
+
+    <h2>Step 7: Start and Stop Monitoring</h2>
+    <ol>
+        <li>Click the "Start Monitoring" button to begin monitoring alerts.</li>
+        <li>When an alert is detected, the detection time and alert name will appear in the "Alert Detection History".</li>
+        <li>To stop monitoring, click the "Stop Monitoring" button.</li>
+    </ol>
+</body>
+</html>

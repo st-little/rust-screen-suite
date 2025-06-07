@@ -1,0 +1,95 @@
+# Alert component
+alert_start_monitoring = Iniciar Monitoramento
+alert_stop_monitoring = Parar Monitoramento
+alert_history = Histórico de Detecção de Alertas
+alert_no_history = Nenhum histórico de detecção
+
+# Tooltip
+alert_tooltip_start = Iniciar monitoramento de alertas
+alert_tooltip_stop = Parar monitoramento de alertas
+alert_tooltip_clear_history = Limpar histórico de detecção de alertas
+
+# Toast
+alert_toast_started = Monitoramento de alertas iniciado
+alert_toast_stopped = Monitoramento de alertas parado
+alert_toast_error = Ocorreu um erro durante o monitoramento de alertas
+alert_toast_cleared = Histórico de detecção de alertas limpo
+
+# Setting component
+setting_settings = Configurações
+setting_save = Salvar
+setting_cancel = Cancelar
+setting_tab_general = Geral
+setting_tab_templates = Modelos
+setting_tab_alerts = Alertas
+setting_tab_monitor = Monitoramento
+setting_tab_notification = Notificação
+setting_tab_license = Licença
+setting_language = Idioma
+setting_timezone = Fuso horário
+setting_theme = Tema
+setting_dark = Escuro
+setting_monitor_interval = Intervalo de Monitoramento ({ $ms } ms)
+setting_monitor_skip_duration = Tempo de Espera Após Detecção ({ $ms } ms)
+setting_monitor_threshold = Limite ({ $value })
+setting_monitor_scale = Escala de Redimensionamento ({ $value })
+setting_template_airdrop = Airdrop Detectado
+setting_template_heli = Helicóptero de Patrulha Gerado
+setting_template_ch47 = CH-47 Gerado
+setting_template_cargo = Navio de Carga Gerado
+setting_template_shovel = Poço de Pá Online
+setting_template_oil_rig_large = Grande Plataforma de Petróleo Online
+setting_template_oil_rig_small = Pequena Plataforma de Petróleo Online
+setting_preview = Visualizar
+setting_not_set = Não Definido
+setting_set = Definido
+setting_desc_templates = Defina modelos de imagem para cada alerta. Eles serão usados para detecção no jogo.
+setting_desc_alerts = Configure quais alertas monitorar. *Defina um modelo para cada alerta a ser monitorado.
+setting_desc_monitor = Ajuste as configurações de monitoramento. Intervalo e limite afetam a precisão.
+setting_desc_notification = Ajuste as notificações. Personalize como receber alertas (som, Discord, etc.).
+setting_desc_license = Lista de licenças das bibliotecas usadas neste aplicativo.
+setting_btn_close = Fechar
+setting_btn_preview = Visualizar
+setting_btn_open_rust_licenses = Abrir licenças Rust
+setting_btn_open_npm_licenses = Abrir licenças Node
+setting_btn_open_other_licenses = Abrir outras licenças
+setting_msg_save_success = Configurações salvas
+setting_msg_save_error = Falha ao salvar configurações
+setting_msg_image_load_error = Falha ao carregar imagem.
+setting_placeholder_discord_webhook = https://discord.com/api/webhooks/...
+setting_placeholder_discord_username = Nome de usuário para notificações
+setting_placeholder_discord_avatar_url = https://example.com/avatar.png
+setting_undefined_tab = Aba indefinida.
+setting_timezone_Asia_Tokyo = Japão
+setting_timezone_Asia_Shanghai = China
+setting_timezone_Asia_Seoul = Coreia
+setting_timezone_Asia_Singapore = Cingapura
+setting_timezone_Asia_Bangkok = Tailândia
+setting_timezone_Europe_London = Reino Unido
+setting_timezone_Europe_Paris = França
+setting_timezone_Europe_Berlin = Alemanha
+setting_timezone_Europe_Moscow = Rússia
+setting_timezone_America_New_York = EUA Leste
+setting_timezone_America_Chicago = EUA Central
+setting_timezone_America_Denver = EUA Montanhas
+setting_timezone_America_Los_Angeles = EUA Oeste
+setting_timezone_America_Sao_Paulo = Brasil
+setting_timezone_Australia_Sydney = Austrália
+setting_timezone_Pacific_Auckland = Nova Zelândia
+setting_timezone_UTC = Tempo Universal Coordenado
+setting_notification_sound = Som de Notificação
+setting_notification_volume = Volume ({$value}%)
+setting_notification_discord = Discord
+setting_notification_webhook_url = URL do Webhook
+setting_notification_username = Nome de Usuário
+setting_notification_avatar_url = URL do Avatar
+
+# Footer component
+footer_monitoring = Monitorando...
+footer_stopped = Parado
+
+# Header component
+header_open_settings = Abrir Configurações
+header_open_help = Abrir Ajuda
+header_notification_history = Histórico de Notificações
+header_app_name = Alert Sentinel

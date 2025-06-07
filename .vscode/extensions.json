@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "rust-lang.rust-analyzer",
+    "DioxusLabs.dioxus",
+    "github.vscode-github-actions",
+    "wmaurer.change-case",
+  ]
+}

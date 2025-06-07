@@ -1,0 +1,95 @@
+# Alert component
+alert_start_monitoring = Démarrer la surveillance
+alert_stop_monitoring = Arrêter la surveillance
+alert_history = Historique de détection d'alerte
+alert_no_history = Aucun historique de détection
+
+# Tooltip
+alert_tooltip_start = Démarrer la surveillance des alertes
+alert_tooltip_stop = Arrêter la surveillance des alertes
+alert_tooltip_clear_history = Effacer l'historique de détection des alertes
+
+# Toast
+alert_toast_started = Surveillance des alertes démarrée
+alert_toast_stopped = Surveillance des alertes arrêtée
+alert_toast_error = Une erreur est survenue lors de la surveillance des alertes
+alert_toast_cleared = Historique de détection des alertes effacé
+
+# Setting component
+setting_settings = Paramètres
+setting_save = Enregistrer
+setting_cancel = Annuler
+setting_tab_general = Général
+setting_tab_templates = Modèles
+setting_tab_alerts = Alertes
+setting_tab_monitor = Surveillance
+setting_tab_notification = Notification
+setting_tab_license = Licence
+setting_language = Langue
+setting_timezone = Fuseau horaire
+setting_theme = Thème
+setting_dark = Sombre
+setting_monitor_interval = Intervalle de surveillance ({ $ms } ms)
+setting_monitor_skip_duration = Temps d'attente après détection ({ $ms } ms)
+setting_monitor_threshold = Seuil ({ $value })
+setting_monitor_scale = Échelle de redimensionnement ({ $value })
+setting_template_airdrop = Airdrop détecté
+setting_template_heli = Hélicoptère de patrouille apparu
+setting_template_ch47 = CH-47 apparu
+setting_template_cargo = Cargo apparu
+setting_template_shovel = Fosse à pelle en ligne
+setting_template_oil_rig_large = Grande plate-forme pétrolière en ligne
+setting_template_oil_rig_small = Petite plate-forme pétrolière en ligne
+setting_preview = Aperçu
+setting_not_set = Non défini
+setting_set = Défini
+setting_desc_templates = Définissez les modèles d'image pour chaque alerte. Ils seront utilisés pour la détection en jeu.
+setting_desc_alerts = Configurez les alertes à surveiller. *Veuillez définir un modèle pour chaque alerte à surveiller.
+setting_desc_monitor = Réglez les paramètres de surveillance. Ajuster l'intervalle et le seuil peut améliorer la précision.
+setting_desc_notification = Réglez les notifications. Personnalisez la réception des alertes (son, Discord, etc.).
+setting_desc_license = Liste des licences des bibliothèques utilisées par cette application.
+setting_btn_close = Fermer
+setting_btn_preview = Aperçu
+setting_btn_open_rust_licenses = Ouvrir les licences Rust
+setting_btn_open_npm_licenses = Ouvrir les licences Node
+setting_btn_open_other_licenses = Ouvrir les autres licences
+setting_msg_save_success = Paramètres enregistrés
+setting_msg_save_error = Échec de l'enregistrement des paramètres
+setting_msg_image_load_error = Impossible de charger l'image.
+setting_placeholder_discord_webhook = https://discord.com/api/webhooks/...
+setting_placeholder_discord_username = Nom d'utilisateur pour les notifications
+setting_placeholder_discord_avatar_url = https://example.com/avatar.png
+setting_undefined_tab = Onglet non défini.
+setting_timezone_Asia_Tokyo = Japon
+setting_timezone_Asia_Shanghai = Chine
+setting_timezone_Asia_Seoul = Corée
+setting_timezone_Asia_Singapore = Singapour
+setting_timezone_Asia_Bangkok = Thaïlande
+setting_timezone_Europe_London = Royaume-Uni
+setting_timezone_Europe_Paris = France
+setting_timezone_Europe_Berlin = Allemagne
+setting_timezone_Europe_Moscow = Russie
+setting_timezone_America_New_York = États-Unis Est
+setting_timezone_America_Chicago = États-Unis Centre
+setting_timezone_America_Denver = États-Unis Montagne
+setting_timezone_America_Los_Angeles = États-Unis Ouest
+setting_timezone_America_Sao_Paulo = Brésil
+setting_timezone_Australia_Sydney = Australie
+setting_timezone_Pacific_Auckland = Nouvelle-Zélande
+setting_timezone_UTC = Temps universel coordonné
+setting_notification_sound = Son de notification
+setting_notification_volume = Volume ({$value}%)
+setting_notification_discord = Discord
+setting_notification_webhook_url = URL du Webhook
+setting_notification_username = Nom d'utilisateur
+setting_notification_avatar_url = URL de l'avatar
+
+# Footer component
+footer_monitoring = Surveillance en cours...
+footer_stopped = Arrêté
+
+# Header component
+header_open_settings = Ouvrir les paramètres
+header_open_help = Ouvrir l'aide
+header_notification_history = Historique des notifications
+header_app_name = Alert Sentinel
