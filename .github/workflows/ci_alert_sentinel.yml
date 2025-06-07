@@ -17,11 +17,8 @@ jobs:
         with:
           toolchain: 1.86.0
 
-      - name: Install Dioxus CLI v0.6
-        run: cargo install dioxus-cli --version=0.6.3
-
       - name: Install OpenCV (with Chocolatey)
         run: choco install -y opencv --version=4.11.0
 
       - name: Build alert_sentinel (release)
-        run: dx build --release --platform desktop --package alert_sentinel
+        run: cargo build --release --package alert_sentinel
