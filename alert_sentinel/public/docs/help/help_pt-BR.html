@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Guia de Monitoramento de Alertas</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; line-height: 1.7; }
+        h1 { font-size: 1.7em; margin-bottom: 0.5em; }
+        h2 { font-size: 1.2em; margin-top: 2em; }
+        ol, ul { margin-left: 1.5em; }
+        li { margin-bottom: 0.4em; }
+        code { background: #f4f4f4; padding: 0.1em 0.4em; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Guia de Monitoramento de Alertas</h1>
+    <p>Este guia explica como configurar o aplicativo usando o alerta "Airdrop Detectado" como exemplo.</p>
+
+    <h2>Passo 1: Prepare o Modelo</h2>
+    <ol>
+        <li>Quando o alerta "Airdrop Detectado" aparecer no Rust, tire uma captura de tela do jogo.</li>
+        <li>Recorte a área do alerta da captura de tela e salve como um arquivo de imagem.</li>
+    </ol>
+
+    <h2>Passo 2: Defina o Idioma e o Fuso Horário</h2>
+    <ol>
+        <li>Clique no ícone "Configurações" no cabeçalho para abrir a tela de configurações.</li>
+        <li>Selecione a guia "Geral" na barra lateral.</li>
+        <li>Selecione o idioma desejado no menu suspenso "Idioma".</li>
+        <li>Selecione seu fuso horário no menu suspenso "Fuso Horário".</li>
+        <li>Clique no botão "Salvar" na parte inferior da tela para salvar as configurações.</li>
+    </ol>
+
+    <h2>Passo 3: Defina o Modelo</h2>
+    <ol>
+        <li>Selecione a guia "Modelo" na barra lateral.</li>
+        <li>Clique no botão "Escolher Arquivo" para "Airdrop Detectado" e selecione a imagem salva no Passo 1.</li>
+        <li>Use o botão de visualização à direita para confirmar se a imagem está correta.</li>
+        <li>Clique no botão "Salvar".</li>
+    </ol>
+
+    <h2>Passo 4: Selecione os Alertas para Monitorar</h2>
+    <ol>
+        <li>Selecione a guia "Alertas" na barra lateral.</li>
+        <li>Ative a opção para "Airdrop Detectado".</li>
+        <li>Clique no botão "Salvar".</li>
+    </ol>
+
+    <h2>Passo 5: Ajuste as Configurações de Monitoramento</h2>
+    <p>Se a detecção de alertas não funcionar bem, ajuste as configurações da seguinte forma:</p>
+    <ol>
+        <li>Selecione a guia "Monitoramento" na barra lateral.</li>
+        <li>Ajuste o intervalo de detecção (milissegundos) com o controle deslizante "Intervalo de Detecção".</li>
+        <li>Ajuste o tempo de espera após a detecção (milissegundos) com o controle deslizante "Tempo de Espera Após Detecção".</li>
+        <li>Ajuste o limite para correspondência de modelo com o controle deslizante "Limite".</li>
+        <li>Você pode ajustar o controle deslizante "Escala de Redimensionamento" para alterar a taxa de redução da imagem usada para correspondência de modelo (valores menores aceleram o processamento, mas podem reduzir a precisão da detecção).</li>
+        <li>Clique no botão "Salvar".</li>
+    </ol>
+
+    <h2>Passo 6: Configure as Notificações</h2>
+    <ol>
+        <li>Selecione a guia "Notificações" na barra lateral.</li>
+        <li>Para reproduzir um som de notificação quando um alerta for detectado, ative a opção "Som de Notificação".</li>
+        <li>Para usar notificações do Discord, ative a opção "Discord" e insira sua URL do Webhook (você pode obter a URL do Webhook nas configurações do seu servidor Discord).</li>
+        <li>Clique no botão "Salvar".</li>
+    </ol>
+
+    <h2>Passo 7: Iniciar e Parar o Monitoramento</h2>
+    <ol>
+        <li>Clique no botão "Iniciar Monitoramento" para começar a monitorar alertas.</li>
+        <li>Quando um alerta for detectado, o horário de detecção e o nome do alerta aparecerão no "Histórico de Detecção de Alertas".</li>
+        <li>Para parar o monitoramento, clique no botão "Parar Monitoramento".</li>
+    </ol>
+</body>
+</html>

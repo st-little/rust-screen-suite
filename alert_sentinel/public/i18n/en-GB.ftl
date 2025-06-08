@@ -1,0 +1,95 @@
+# Alert component
+alert_start_monitoring = Start Monitoring
+alert_stop_monitoring = Stop Monitoring
+alert_history = Alert Detection History
+alert_no_history = No detection history
+
+# Tooltip
+alert_tooltip_start = Start alert monitoring
+alert_tooltip_stop = Stop alert monitoring
+alert_tooltip_clear_history = Clear alert detection history
+
+# Toast
+alert_toast_started = Alert monitoring started
+alert_toast_stopped = Alert monitoring stopped
+alert_toast_error = An error occurred during alert monitoring
+alert_toast_cleared = Alert detection history cleared
+
+# Setting component
+setting_settings = Settings
+setting_save = Save
+setting_cancel = Cancel
+setting_tab_general = General
+setting_tab_templates = Templates
+setting_tab_alerts = Alerts
+setting_tab_monitor = Monitoring
+setting_tab_notification = Notification
+setting_tab_license = License
+setting_language = Language
+setting_timezone = Timezone
+setting_theme = Theme
+setting_dark = Dark
+setting_monitor_interval = Monitoring Interval ({ $ms } ms)
+setting_monitor_skip_duration = Skip Time After Detection ({ $ms } ms)
+setting_monitor_threshold = Threshold ({ $value })
+setting_monitor_scale = Resize Scale ({ $value })
+setting_template_airdrop = AIRDROP INBOUND
+setting_template_heli = PATROL HELICOPTER INBOUND
+setting_template_ch47 = CARGO HELICOPTER INBOUND
+setting_template_cargo = CARGO SHIP INBOUND
+setting_template_shovel = EXCAVATOR HAS BEEN ACTIVATED
+setting_template_oil_rig_large = LARGE OILRIG IS NOW ONLINE
+setting_template_oil_rig_small = SMALL OILRIG IS NOW ONLINE
+setting_preview = Preview
+setting_not_set = Not Set
+setting_set = Set
+setting_desc_templates = Set image templates for each alert. These images will be used for in-game alert detection.
+setting_desc_alerts = Configure which alerts to monitor. *Please set a template for each alert you want to monitor.
+setting_desc_monitor = Configure monitoring settings. Adjusting the interval and threshold can improve detection accuracy.
+setting_desc_notification = Configure notification settings. Customize how you receive alert notifications, such as sound or Discord integration.
+setting_desc_license = List of licenses for libraries used in this application.
+setting_btn_close = Close
+setting_btn_preview = Preview
+setting_btn_open_rust_licenses = Open Rust crate licenses
+setting_btn_open_npm_licenses = Open Node module licenses
+setting_btn_open_other_licenses = Open other licenses
+setting_msg_save_success = Settings saved
+setting_msg_save_error = Failed to save settings
+setting_msg_image_load_error = Failed to load image.
+setting_placeholder_discord_webhook = https://discord.com/api/webhooks/...
+setting_placeholder_discord_username = Username for notifications
+setting_placeholder_discord_avatar_url = https://example.com/avatar.png
+setting_undefined_tab = Undefined tab.
+setting_timezone_Asia_Tokyo = Japan
+setting_timezone_Asia_Shanghai = China
+setting_timezone_Asia_Seoul = Korea
+setting_timezone_Asia_Singapore = Singapore
+setting_timezone_Asia_Bangkok = Thailand
+setting_timezone_Europe_London = United Kingdom
+setting_timezone_Europe_Paris = France
+setting_timezone_Europe_Berlin = Germany
+setting_timezone_Europe_Moscow = Russia
+setting_timezone_America_New_York = US Eastern
+setting_timezone_America_Chicago = US Central
+setting_timezone_America_Denver = US Mountain
+setting_timezone_America_Los_Angeles = US Pacific
+setting_timezone_America_Sao_Paulo = Brazil
+setting_timezone_Australia_Sydney = Australia
+setting_timezone_Pacific_Auckland = New Zealand
+setting_timezone_UTC = Coordinated Universal Time
+setting_notification_sound = Notification Sound
+setting_notification_volume = Volume ({$value}%)
+setting_notification_discord = Discord
+setting_notification_webhook_url = Webhook URL
+setting_notification_username = Username
+setting_notification_avatar_url = Avatar URL
+
+# Footer component
+footer_monitoring = Monitoring...
+footer_stopped = Stopped
+
+# Header component
+header_open_settings = Open Settings
+header_open_help = Open Help
+header_notification_history = Notification History
+header_app_name = Alert Sentinel

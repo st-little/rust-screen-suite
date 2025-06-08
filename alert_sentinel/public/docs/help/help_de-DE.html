@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Leitfaden zur Alarmüberwachung</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; line-height: 1.7; }
+        h1 { font-size: 1.7em; margin-bottom: 0.5em; }
+        h2 { font-size: 1.2em; margin-top: 2em; }
+        ol, ul { margin-left: 1.5em; }
+        li { margin-bottom: 0.4em; }
+        code { background: #f4f4f4; padding: 0.1em 0.4em; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Leitfaden zur Alarmüberwachung</h1>
+    <p>In diesem Leitfaden wird die Einrichtung der Anwendung am Beispiel des Alarms "Airdrop erkannt" erklärt.</p>
+
+    <h2>Schritt 1: Vorlage vorbereiten</h2>
+    <ol>
+        <li>Wenn der Alarm "Airdrop erkannt" in Rust erscheint, machen Sie einen Screenshot des Spiels.</li>
+        <li>Schneiden Sie den Alarmbereich aus dem Screenshot aus und speichern Sie ihn als Bilddatei.</li>
+    </ol>
+
+    <h2>Schritt 2: Sprache und Zeitzone einstellen</h2>
+    <ol>
+        <li>Klicken Sie auf das "Einstellungen"-Symbol in der Kopfzeile, um das Einstellungsmenü zu öffnen.</li>
+        <li>Wählen Sie im Seitenmenü den Tab "Allgemein".</li>
+        <li>Wählen Sie Ihre bevorzugte Sprache im Dropdown-Menü "Sprache".</li>
+        <li>Wählen Sie Ihre Zeitzone im Dropdown-Menü "Zeitzone".</li>
+        <li>Klicken Sie unten auf der Seite auf die Schaltfläche "Speichern", um Ihre Einstellungen zu speichern.</li>
+    </ol>
+
+    <h2>Schritt 3: Vorlage festlegen</h2>
+    <ol>
+        <li>Wählen Sie im Seitenmenü den Tab "Vorlage".</li>
+        <li>Klicken Sie auf die Schaltfläche "Datei auswählen" für "Airdrop erkannt" und wählen Sie das in Schritt 1 gespeicherte Bild aus.</li>
+        <li>Verwenden Sie die Vorschau-Schaltfläche rechts, um zu überprüfen, ob das Bild korrekt ist.</li>
+        <li>Klicken Sie auf die Schaltfläche "Speichern".</li>
+    </ol>
+
+    <h2>Schritt 4: Zu überwachende Alarme auswählen</h2>
+    <ol>
+        <li>Wählen Sie im Seitenmenü den Tab "Alarme".</li>
+        <li>Aktivieren Sie den Schalter für "Airdrop erkannt".</li>
+        <li>Klicken Sie auf die Schaltfläche "Speichern".</li>
+    </ol>
+
+    <h2>Schritt 5: Überwachungseinstellungen anpassen</h2>
+    <p>Wenn die Alarmerkennung nicht wie gewünscht funktioniert, passen Sie die Einstellungen wie folgt an:</p>
+    <ol>
+        <li>Wählen Sie im Seitenmenü den Tab "Überwachung".</li>
+        <li>Passen Sie das Erkennungsintervall (Millisekunden) mit dem Schieberegler "Erkennungsintervall" an.</li>
+        <li>Passen Sie die Wartezeit nach der Erkennung (Millisekunden) mit dem Schieberegler "Wartezeit nach Erkennung" an.</li>
+        <li>Passen Sie den Schwellenwert für die Vorlagenübereinstimmung mit dem Schieberegler "Schwellenwert" an.</li>
+        <li>Mit dem Schieberegler "Skalierungsfaktor" können Sie das für die Vorlagenübereinstimmung verwendete Bildverkleinerungsverhältnis anpassen (niedrigere Werte beschleunigen die Verarbeitung, können aber die Erkennungsgenauigkeit verringern).</li>
+        <li>Klicken Sie auf die Schaltfläche "Speichern".</li>
+    </ol>
+
+    <h2>Schritt 6: Benachrichtigungen einrichten</h2>
+    <ol>
+        <li>Wählen Sie im Seitenmenü den Tab "Benachrichtigungen".</li>
+        <li>Um einen Benachrichtigungston bei Alarm zu spielen, aktivieren Sie den Schalter "Benachrichtigungston".</li>
+        <li>Um Discord-Benachrichtigungen zu verwenden, aktivieren Sie den Schalter "Discord" und geben Sie Ihre Webhook-URL ein (diese finden Sie in den Einstellungen Ihres Discord-Servers).</li>
+        <li>Klicken Sie auf die Schaltfläche "Speichern".</li>
+    </ol>
+
+    <h2>Schritt 7: Überwachung starten und stoppen</h2>
+    <ol>
+        <li>Klicken Sie auf die Schaltfläche "Überwachung starten", um die Alarmüberwachung zu beginnen.</li>
+        <li>Wenn ein Alarm erkannt wird, erscheinen die Erkennungszeit und der Alarmname im "Alarm-Erkennungsverlauf".</li>
+        <li>Um die Überwachung zu beenden, klicken Sie auf die Schaltfläche "Überwachung stoppen".</li>
+    </ol>
+</body>
+</html>

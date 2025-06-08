@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Guide de surveillance des alertes</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; line-height: 1.7; }
+        h1 { font-size: 1.7em; margin-bottom: 0.5em; }
+        h2 { font-size: 1.2em; margin-top: 2em; }
+        ol, ul { margin-left: 1.5em; }
+        li { margin-bottom: 0.4em; }
+        code { background: #f4f4f4; padding: 0.1em 0.4em; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Guide de surveillance des alertes</h1>
+    <p>Ce guide explique comment configurer l'application en utilisant l'alerte "Airdrop détecté" comme exemple.</p>
+
+    <h2>Étape 1 : Préparer le modèle</h2>
+    <ol>
+        <li>Lorsque l'alerte "Airdrop détecté" apparaît dans Rust, prenez une capture d'écran du jeu.</li>
+        <li>Recadrez la zone d'alerte de la capture d'écran et enregistrez-la en tant que fichier image.</li>
+    </ol>
+
+    <h2>Étape 2 : Définir la langue et le fuseau horaire</h2>
+    <ol>
+        <li>Cliquez sur l'icône "Paramètres" dans l'en-tête pour ouvrir l'écran des paramètres.</li>
+        <li>Sélectionnez l'onglet "Général" dans la barre latérale.</li>
+        <li>Sélectionnez votre langue préférée dans la liste déroulante "Langue".</li>
+        <li>Sélectionnez votre fuseau horaire dans la liste déroulante "Fuseau horaire".</li>
+        <li>Cliquez sur le bouton "Enregistrer" en bas de l'écran pour sauvegarder vos paramètres.</li>
+    </ol>
+
+    <h2>Étape 3 : Définir le modèle</h2>
+    <ol>
+        <li>Sélectionnez l'onglet "Modèle" dans la barre latérale.</li>
+        <li>Cliquez sur le bouton "Choisir un fichier" pour "Airdrop détecté" et sélectionnez l'image enregistrée à l'étape 1.</li>
+        <li>Utilisez le bouton d'aperçu à droite pour vérifier que l'image est correcte.</li>
+        <li>Cliquez sur le bouton "Enregistrer".</li>
+    </ol>
+
+    <h2>Étape 4 : Sélectionner les alertes à surveiller</h2>
+    <ol>
+        <li>Sélectionnez l'onglet "Alertes" dans la barre latérale.</li>
+        <li>Activez le bouton pour "Airdrop détecté".</li>
+        <li>Cliquez sur le bouton "Enregistrer".</li>
+    </ol>
+
+    <h2>Étape 5 : Ajuster les paramètres de surveillance</h2>
+    <p>Si la détection d'alerte ne fonctionne pas correctement, ajustez les paramètres comme suit :</p>
+    <ol>
+        <li>Sélectionnez l'onglet "Surveillance" dans la barre latérale.</li>
+        <li>Ajustez l'intervalle de détection (millisecondes) avec le curseur "Intervalle de détection".</li>
+        <li>Ajustez le temps d'attente après détection (millisecondes) avec le curseur "Temps d'attente après détection".</li>
+        <li>Ajustez le seuil de correspondance de modèle avec le curseur "Seuil".</li>
+        <li>Vous pouvez ajuster le curseur "Échelle de redimensionnement" pour modifier le taux de réduction d'image utilisé pour la correspondance de modèle (des valeurs plus faibles accélèrent le traitement mais peuvent réduire la précision de détection).</li>
+        <li>Cliquez sur le bouton "Enregistrer".</li>
+    </ol>
+
+    <h2>Étape 6 : Configurer les notifications</h2>
+    <ol>
+        <li>Sélectionnez l'onglet "Notifications" dans la barre latérale.</li>
+        <li>Pour jouer un son de notification lorsqu'une alerte est détectée, activez le bouton "Son de notification".</li>
+        <li>Pour utiliser les notifications Discord, activez le bouton "Discord" et saisissez votre URL Webhook (vous pouvez obtenir l'URL Webhook dans les paramètres de votre serveur Discord).</li>
+        <li>Cliquez sur le bouton "Enregistrer".</li>
+    </ol>
+
+    <h2>Étape 7 : Démarrer et arrêter la surveillance</h2>
+    <ol>
+        <li>Cliquez sur le bouton "Démarrer la surveillance" pour commencer à surveiller les alertes.</li>
+        <li>Lorsqu'une alerte est détectée, l'heure de détection et le nom de l'alerte apparaîtront dans "Historique de détection d'alerte".</li>
+        <li>Pour arrêter la surveillance, cliquez sur le bouton "Arrêter la surveillance".</li>
+    </ol>
+</body>
+</html>

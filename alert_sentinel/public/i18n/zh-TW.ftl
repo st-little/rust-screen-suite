@@ -1,0 +1,95 @@
+# Alert component
+alert_start_monitoring = 開始監控
+alert_stop_monitoring = 停止監控
+alert_history = 警報偵測歷史
+alert_no_history = 沒有偵測歷史
+
+# Tooltip
+alert_tooltip_start = 開始警報監控
+alert_tooltip_stop = 停止警報監控
+alert_tooltip_clear_history = 清除警報偵測歷史
+
+# Toast
+alert_toast_started = 已開始警報監控
+alert_toast_stopped = 已停止警報監控
+alert_toast_error = 警報監控時發生錯誤
+alert_toast_cleared = 已清除警報偵測歷史
+
+# Setting component
+setting_settings = 設定
+setting_save = 儲存
+setting_cancel = 取消
+setting_tab_general = 一般
+setting_tab_templates = 範本
+setting_tab_alerts = 警報
+setting_tab_monitor = 監控
+setting_tab_notification = 通知
+setting_tab_license = 授權
+setting_language = 語言
+setting_timezone = 時區
+setting_theme = 主題
+setting_dark = 深色
+setting_monitor_interval = 監控間隔（{ $ms }毫秒）
+setting_monitor_skip_duration = 偵測後跳過時間（{ $ms }毫秒）
+setting_monitor_threshold = 閾值（{ $value }）
+setting_monitor_scale = 縮放比例（{ $value }）
+setting_template_airdrop = 空投已偵測
+setting_template_heli = 巡邏直升機已生成
+setting_template_ch47 = CH-47已生成
+setting_template_cargo = 貨船已生成
+setting_template_shovel = 鏟坑已上線
+setting_template_oil_rig_large = 大型油井已上線
+setting_template_oil_rig_small = 小型油井已上線
+setting_preview = 預覽
+setting_not_set = 未設定
+setting_set = 已設定
+setting_desc_templates = 設定各警報的圖片範本。設定後將用於遊戲內警報偵測。
+setting_desc_alerts = 設定要監控的警報。*請為每個要監控的警報設定範本。
+setting_desc_monitor = 設定監控參數。調整間隔與閾值可提升偵測準確度。
+setting_desc_notification = 設定通知方式。可自訂聲音或Discord等通知方式。
+setting_desc_license = 本應用程式所用函式庫授權列表。
+setting_btn_close = 關閉
+setting_btn_preview = 預覽
+setting_btn_open_rust_licenses = 開啟Rust函式庫授權
+setting_btn_open_npm_licenses = 開啟Node模組授權
+setting_btn_open_other_licenses = 開啟其他授權
+setting_msg_save_success = 設定已儲存
+setting_msg_save_error = 設定儲存失敗
+setting_msg_image_load_error = 圖片載入失敗。
+setting_placeholder_discord_webhook = https://discord.com/api/webhooks/...
+setting_placeholder_discord_username = 通知用使用者名稱
+setting_placeholder_discord_avatar_url = https://example.com/avatar.png
+setting_undefined_tab = 未定義的分頁。
+setting_timezone_Asia_Tokyo = 日本
+setting_timezone_Asia_Shanghai = 中國
+setting_timezone_Asia_Seoul = 韓國
+setting_timezone_Asia_Singapore = 新加坡
+setting_timezone_Asia_Bangkok = 泰國
+setting_timezone_Europe_London = 英國
+setting_timezone_Europe_Paris = 法國
+setting_timezone_Europe_Berlin = 德國
+setting_timezone_Europe_Moscow = 俄羅斯
+setting_timezone_America_New_York = 美國東部
+setting_timezone_America_Chicago = 美國中部
+setting_timezone_America_Denver = 美國山區
+setting_timezone_America_Los_Angeles = 美國西部
+setting_timezone_America_Sao_Paulo = 巴西
+setting_timezone_Australia_Sydney = 澳洲
+setting_timezone_Pacific_Auckland = 紐西蘭
+setting_timezone_UTC = 世界協調時間
+setting_notification_sound = 通知音
+setting_notification_volume = 音量（{$value}%）
+setting_notification_discord = Discord
+setting_notification_webhook_url = Webhook URL
+setting_notification_username = 使用者名稱
+setting_notification_avatar_url = 頭像URL
+
+# Footer component
+footer_monitoring = 監控中...
+footer_stopped = 已停止
+
+# Header component
+header_open_settings = 開啟設定
+header_open_help = 開啟說明
+header_notification_history = 通知監控歷史
+header_app_name = Alert Sentinel

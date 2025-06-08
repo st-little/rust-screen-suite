@@ -1,0 +1,95 @@
+# Alert component
+alert_start_monitoring = Начать мониторинг
+alert_stop_monitoring = Остановить мониторинг
+alert_history = История обнаружения оповещений
+alert_no_history = Нет истории обнаружения
+
+# Tooltip
+alert_tooltip_start = Начать мониторинг оповещений
+alert_tooltip_stop = Остановить мониторинг оповещений
+alert_tooltip_clear_history = Очистить историю обнаружения оповещений
+
+# Toast
+alert_toast_started = Мониторинг оповещений начат
+alert_toast_stopped = Мониторинг оповещений остановлен
+alert_toast_error = Произошла ошибка при мониторинге оповещений
+alert_toast_cleared = История обнаружения оповещений очищена
+
+# Setting component
+setting_settings = Настройки
+setting_save = Сохранить
+setting_cancel = Отмена
+setting_tab_general = Общие
+setting_tab_templates = Шаблоны
+setting_tab_alerts = Оповещения
+setting_tab_monitor = Мониторинг
+setting_tab_notification = Уведомления
+setting_tab_license = Лицензия
+setting_language = Язык
+setting_timezone = Часовой пояс
+setting_theme = Тема
+setting_dark = Тёмная
+setting_monitor_interval = Интервал мониторинга ({ $ms } мс)
+setting_monitor_skip_duration = Время ожидания после обнаружения ({ $ms } мс)
+setting_monitor_threshold = Порог ({ $value })
+setting_monitor_scale = Масштаб изменения размера ({ $value })
+setting_template_airdrop = Обнаружен сброс груза
+setting_template_heli = Патрульный вертолёт появился
+setting_template_ch47 = CH-47 появился
+setting_template_cargo = Грузовой корабль появился
+setting_template_shovel = Котлован онлайн
+setting_template_oil_rig_large = Большая нефтяная вышка онлайн
+setting_template_oil_rig_small = Малая нефтяная вышка онлайн
+setting_preview = Предпросмотр
+setting_not_set = Не задано
+setting_set = Задано
+setting_desc_templates = Установите шаблоны изображений для каждого оповещения. Они будут использоваться для обнаружения в игре.
+setting_desc_alerts = Настройте, какие оповещения отслеживать. *Для каждого отслеживаемого оповещения задайте шаблон.
+setting_desc_monitor = Настройте параметры мониторинга. Интервал и порог влияют на точность обнаружения.
+setting_desc_notification = Настройте уведомления. Можно выбрать звук или интеграцию с Discord.
+setting_desc_license = Список лицензий библиотек, используемых в этом приложении.
+setting_btn_close = Закрыть
+setting_btn_preview = Предпросмотр
+setting_btn_open_rust_licenses = Открыть лицензии Rust
+setting_btn_open_npm_licenses = Открыть лицензии Node
+setting_btn_open_other_licenses = Открыть другие лицензии
+setting_msg_save_success = Настройки сохранены
+setting_msg_save_error = Не удалось сохранить настройки
+setting_msg_image_load_error = Не удалось загрузить изображение.
+setting_placeholder_discord_webhook = https://discord.com/api/webhooks/...
+setting_placeholder_discord_username = Имя пользователя для уведомлений
+setting_placeholder_discord_avatar_url = https://example.com/avatar.png
+setting_undefined_tab = Неопределённая вкладка.
+setting_timezone_Asia_Tokyo = Япония
+setting_timezone_Asia_Shanghai = Китай
+setting_timezone_Asia_Seoul = Корея
+setting_timezone_Asia_Singapore = Сингапур
+setting_timezone_Asia_Bangkok = Таиланд
+setting_timezone_Europe_London = Великобритания
+setting_timezone_Europe_Paris = Франция
+setting_timezone_Europe_Berlin = Германия
+setting_timezone_Europe_Moscow = Россия
+setting_timezone_America_New_York = США Восток
+setting_timezone_America_Chicago = США Центр
+setting_timezone_America_Denver = США Горы
+setting_timezone_America_Los_Angeles = США Запад
+setting_timezone_America_Sao_Paulo = Бразилия
+setting_timezone_Australia_Sydney = Австралия
+setting_timezone_Pacific_Auckland = Новая Зеландия
+setting_timezone_UTC = Всемирное координированное время
+setting_notification_sound = Звук уведомления
+setting_notification_volume = Громкость ({$value}%)
+setting_notification_discord = Discord
+setting_notification_webhook_url = Webhook URL
+setting_notification_username = Имя пользователя
+setting_notification_avatar_url = URL аватара
+
+# Footer component
+footer_monitoring = Мониторинг...
+footer_stopped = Остановлено
+
+# Header component
+header_open_settings = Открыть настройки
+header_open_help = Открыть справку
+header_notification_history = История уведомлений
+header_app_name = Alert Sentinel
