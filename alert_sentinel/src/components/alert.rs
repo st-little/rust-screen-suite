@@ -1,5 +1,6 @@
 use chrono::Utc;
 use chrono_tz::Tz;
+use core_utils::notification::{play_notification_sound, send_discord_webhook};
 use dioxus::{logger::tracing::debug, prelude::*};
 use dioxus_i18n::t;
 use std::{
@@ -43,6 +44,8 @@ pub fn Alert(
     let mut stop_flag = use_signal(|| Arc::new(AtomicBool::new(false)));
     // Signal holding the detection history (thread-safe)
     let mut detections = use_signal(|| Arc::new(Mutex::new(load_detections())));
+    // Signal to track the last detection count for notifications
+    let mut last_detection_count = use_signal(|| None::<usize>);
     // Parse timezone from config
     let timezone_str = &config.read().timezone;
     let timezone: Tz = timezone_str.parse().unwrap_or(chrono_tz::UTC);
@@ -54,6 +57,54 @@ pub fn Alert(
             // Trigger re-render by mutating the signal (no-op)
             detections.with_mut(|_| {});
         }
+    });
+
+    // Effect to handle new detections and send notifications
+    use_effect(move || {
+        let detections = detections.read();
+        let vec = detections.lock().unwrap();
+        let current_count = vec.len();
+
+        if let Some(prev_count) = last_detection_count() {
+            if current_count > prev_count {
+                for det in vec.iter().skip(prev_count) {
+                    let message = t!(det.kind.as_key());
+                    let cfg = config.read();
+
+                    // Sound notification
+                    if cfg.sound_enabled {
+                        let _ = play_notification_sound(&cfg.sound_path, cfg.sound_volume);
+                    }
+
+                    // Discord webhook notification
+                    if cfg.discord_enabled {
+                        if let Some(webhook_url) = &cfg.discord_webhook {
+                            let webhook_url = webhook_url.clone();
+                            let message = message.clone();
+                            let username = cfg.discord_username.clone();
+                            let avatar_url = cfg.discord_avatar_url.clone();
+                            std::thread::spawn(move || {
+                                let _ = send_discord_webhook(
+                                    &webhook_url,
+                                    &message,
+                                    username,
+                                    avatar_url,
+                                );
+                            });
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // Effect to update the last detection count
+    use_effect(move || {
+        let detections = detections.read();
+        let vec = detections.lock().unwrap();
+        let current_count = vec.len();
+
+        last_detection_count.set(Some(current_count));
     });
 
     rsx! {
