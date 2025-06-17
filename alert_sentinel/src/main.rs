@@ -4,6 +4,7 @@ use dioxus::desktop::{Config, WindowBuilder};
 use dioxus::prelude::*;
 use dioxus_i18n::prelude::*;
 use std::collections::VecDeque;
+use std::{panic, process};
 use unic_langid::langid;
 
 use crate::components::alert::Alert;
@@ -23,6 +24,35 @@ const TAILWIND_CSS: Asset = asset!("/assets/styling/tailwind.css");
 
 /// Entry point for the Alert Sentinel application.
 fn main() {
+    // Set a custom panic hook to handle panics gracefully
+    panic::set_hook(Box::new(|info| {
+        // Log the panic information
+        #[cfg(windows)]
+        {
+            use std::ffi::OsStr;
+            use std::os::windows::ffi::OsStrExt;
+            use windows_sys::Win32::UI::WindowsAndMessaging::{MessageBoxW, MB_ICONERROR, MB_OK};
+
+            let msg = format!(
+                "An error occurred, and the application will now exit.\n\nDetails: {}",
+                info
+            );
+            let wide: Vec<u16> = OsStr::new(&msg).encode_wide().chain(Some(0)).collect();
+            let title: Vec<u16> = OsStr::new("Alert Sentinel")
+                .encode_wide()
+                .chain(Some(0))
+                .collect();
+            unsafe {
+                // Show a message box with the panic information
+                MessageBoxW(0 as _, wide.as_ptr(), title.as_ptr(), MB_OK | MB_ICONERROR);
+            }
+        }
+        // Log the panic information to stderr
+        eprintln!("Application panicked: {info}");
+        // Exit the application with a non-zero status code
+        process::exit(1);
+    }));
+
     dioxus::LaunchBuilder::desktop()
         .with_cfg(
             Config::new().with_window(
