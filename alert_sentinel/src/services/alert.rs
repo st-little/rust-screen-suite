@@ -1,11 +1,9 @@
 use anyhow::Result;
-use core_utils::notification::{play_notification_sound, send_discord_webhook};
 use core_utils::{
     capture::capture_screen_buffer,
     file_util::{data_file_path, load_string_from_file, save_string_to_file},
 };
 use dioxus::logger::tracing::debug;
-use dioxus_i18n::t;
 use image::{imageops::FilterType, DynamicImage};
 use opencv::{
     core::{self, Point},
@@ -89,29 +87,6 @@ pub fn run_template_matching(
                                 max_val,
                                 max_loc
                             );
-                            if config.sound_enabled {
-                                let _ = play_notification_sound(
-                                    &config.sound_path,
-                                    config.sound_volume,
-                                );
-                                if let Err(e) =
-                                    play_notification_sound(&config.sound_path, config.sound_volume)
-                                {
-                                    debug!("Failed to play notification sound: {:?}", e);
-                                }
-                            }
-                            if config.discord_enabled {
-                                if let Some(webhook_url) = &config.discord_webhook {
-                                    if let Err(e) = send_discord_webhook(
-                                        webhook_url,
-                                        &t!($kind.as_key()),
-                                        config.discord_username.clone(),
-                                        config.discord_avatar_url.clone(),
-                                    ) {
-                                        debug!("Discord notification error: {:?}", e);
-                                    }
-                                }
-                            }
                             return Ok(Some(($kind, max_val)));
                         }
                     }
