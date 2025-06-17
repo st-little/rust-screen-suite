@@ -23,14 +23,14 @@ pub fn MainHeader(
     let window = dioxus::desktop::use_window();
 
     rsx! {
-        header { class: "navbar bg-base-300 select-none px-4",
-            div {
-                class: "navbar-start gap-2",
+        header {
+            class: "navbar bg-base-300 select-none px-4",
             // Enable window dragging by mouse down on the header
             onmousedown: {
                 let window = Rc::clone(&window);
                 move |_| window.drag()
             },
+            div { class: "navbar-start gap-2",
                 span { class: "text-lg font-bold", {t!("header_app_name")} }
             }
             div { class: "navbar-end gap-2",
@@ -38,6 +38,7 @@ pub fn MainHeader(
                 button {
                     class: "btn btn-ghost btn-circle tooltip tooltip-bottom",
                     "data-tip": t!("header_open_settings"),
+                    onmousedown: |event| event.stop_propagation(),
                     onclick: move |_| {
                         show_notification.set(false);
                         show_settings.set(!show_settings());
@@ -60,6 +61,7 @@ pub fn MainHeader(
                 button {
                     class: "btn btn-ghost btn-circle mr-8 tooltip tooltip-bottom",
                     "data-tip": t!("header_open_help"),
+                    onmousedown: |event| event.stop_propagation(),
                     onclick: move |_| {
                         if let Ok(exe_path) = env::current_exe() {
                             let path = get_help_file_path(&exe_path, &config().language);
@@ -82,6 +84,7 @@ pub fn MainHeader(
                 // Minimize button
                 button {
                     class: "btn btn-ghost",
+                    onmousedown: |event| event.stop_propagation(),
                     onclick: {
                         let window = Rc::clone(&window);
                         move |_| {
@@ -99,6 +102,7 @@ pub fn MainHeader(
                 // Maximize/Restore button
                 button {
                     class: "btn btn-ghost",
+                    onmousedown: |event| event.stop_propagation(),
                     onclick: {
                         let window = Rc::clone(&window);
                         move |_| {
@@ -123,6 +127,7 @@ pub fn MainHeader(
                 // Close button
                 button {
                     class: "btn btn-ghost",
+                    onmousedown: |event| event.stop_propagation(),
                     onclick: {
                         let window = Rc::clone(&window);
                         move |_| {
