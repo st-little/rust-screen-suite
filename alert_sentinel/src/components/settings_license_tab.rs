@@ -23,7 +23,7 @@ pub fn SettingsLicenseTab() -> Element {
                 // Button to open Rust dependencies license file
                 li {
                     button {
-                        class: "link link-info text-left inline-flex items-center gap-1",
+                        class: "link text-left inline-flex items-center gap-1",
                         onclick: move |_| {
                             if let Ok(exe_path) = env::current_exe() {
                                 let license_path = get_license_file_path(&exe_path, "rust-licenses.html");
@@ -46,7 +46,7 @@ pub fn SettingsLicenseTab() -> Element {
                 // Button to open npm modules license file
                 li {
                     button {
-                        class: "link link-info text-left inline-flex items-center gap-1",
+                        class: "link text-left inline-flex items-center gap-1",
                         onclick: move |_| {
                             if let Ok(exe_path) = env::current_exe() {
                                 let mut license_path = exe_path.clone();
@@ -73,7 +73,7 @@ pub fn SettingsLicenseTab() -> Element {
                 // Button to open other licenses file
                 li {
                     button {
-                        class: "link link-info text-left inline-flex items-center gap-1",
+                        class: "link text-left inline-flex items-center gap-1",
                         onclick: move |_| {
                             if let Ok(exe_path) = env::current_exe() {
                                 let mut license_path = exe_path.clone();

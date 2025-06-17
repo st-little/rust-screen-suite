@@ -26,7 +26,7 @@ impl Default for AppConfig {
     fn default() -> Self {
         AppConfig {
             language: "en-US".to_string(),
-            theme: "dark".to_string(),
+            theme: "night".to_string(),
             timezone: "UTC".to_string(),
             monitor_interval_ms: 1000,
             monitor_skip_duration_ms: 2000,

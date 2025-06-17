@@ -156,7 +156,7 @@ pub fn Alert(
             }
         }
         div { class: "overflow-hidden",
-            div { class: "flex items-center justify-between px-4 pt-4 border-b border-gray-700",
+            div { class: "flex items-center justify-between px-4 pt-4 border-b",
                 span { class: "font-bold", {t!("alert_history")} }
                 // Button to clear detection history
                 button {

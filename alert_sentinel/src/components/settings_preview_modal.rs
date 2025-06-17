@@ -16,15 +16,13 @@ pub fn SettingsPreviewModal(show: Signal<bool>, image_path: Signal<String>) -> E
         let img_src = image_file_to_data_url(&image_path());
         rsx!(
             div { class: "modal modal-open",
-                div {
-                    class: "modal-box text-neutral-content",
-                    style: "background-color: #111827 !important;",
+                div { class: "modal-box",
                     h3 { class: "font-bold text-lg mb-4", {t!("setting_preview")} }
                     // Show image preview or error message
                     match img_src {
                         Some(src) => rsx! {
                             img {
-                                class: "rounded w-full max-h-96 object-contain bg-black",
+                                class: "rounded w-full max-h-96 object-contain",
                                 src,
                                 alt: t!("setting_preview"),
                             }

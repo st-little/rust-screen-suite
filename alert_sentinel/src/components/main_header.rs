@@ -23,14 +23,14 @@ pub fn MainHeader(
     let window = dioxus::desktop::use_window();
 
     rsx! {
-        header { class: "navbar bg-blue-950 text-primary-content select-none px-4",
+        header { class: "navbar bg-base-300 select-none px-4",
             div {
                 class: "navbar-start gap-2",
-                // Enable window dragging by mouse down on the header
-                onmousedown: {
-                    let window = Rc::clone(&window);
-                    move |_| window.drag()
-                },
+            // Enable window dragging by mouse down on the header
+            onmousedown: {
+                let window = Rc::clone(&window);
+                move |_| window.drag()
+            },
                 span { class: "text-lg font-bold", {t!("header_app_name")} }
             }
             div { class: "navbar-end gap-2",
