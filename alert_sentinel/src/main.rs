@@ -19,7 +19,6 @@ mod components;
 mod services;
 mod types;
 
-const DAISYUI_CSS: Asset = asset!("/assets/styling/daisyui.css");
 const TAILWIND_CSS: Asset = asset!("/assets/styling/tailwind.css");
 
 /// Entry point for the Alert Sentinel application.
@@ -112,7 +111,6 @@ fn App() -> Element {
 
     rsx! {
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
-        document::Link { rel: "stylesheet", href: DAISYUI_CSS }
 
         div {
             class: "flex flex-col min-h-screen",
