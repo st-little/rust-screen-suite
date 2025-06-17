@@ -22,7 +22,7 @@ pub fn AlertDetectionHistory(
     timezone: Tz,
 ) -> Element {
     rsx! {
-        ul { class: "list bg-gray-900 text-neutral-content p-4 rounded-box shadow-md",
+        ul { class: "list p-4 rounded-box",
             // Scrollable container for detection history
             div { class: "overflow-y-auto max-h-80",
                 if detections.read().lock().unwrap().is_empty() {
@@ -31,15 +31,13 @@ pub fn AlertDetectionHistory(
                 } else {
                     // Render each detection in reverse order (latest first)
                     for detection in detections.read().lock().unwrap().iter().rev() {
-                        li { class: "list-row border-b border-gray-700",
+                        li { class: "list-row",
                             // Display formatted detection time
-                            label { class: "label text-neutral-content text-base",
+                            label { class: "label text-base ",
                                 {format_detection_time(&detection.timestamp, &timezone)}
                             }
                             // Display alert kind (localized)
-                            label { class: "label text-neutral-content text-base",
-                                {t!(detection.kind.as_key())}
-                            }
+                            label { class: "label text-base", {t!(detection.kind.as_key())} }
                         }
                     }
                 }

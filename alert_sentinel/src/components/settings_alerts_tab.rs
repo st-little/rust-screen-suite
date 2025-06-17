@@ -41,13 +41,13 @@ pub fn SettingsAlertsTab(props: SettingsAlertsTabProps) -> Element {
     rsx! {
         h3 { class: "text-xl font-bold mb-4", {t!("setting_tab_alerts")} }
         p { class: "opacity-60 mb-4", {t!("setting_desc_alerts")} }
-        ul { class: "list bg-gray-900 text-neutral-content p-4 rounded-box",
+        ul { class: "list p-4 rounded-box",
             // Toggle for airdrop alert
             li { class: "list-row",
                 fieldset { class: "fieldset",
-                    label { class: "label text-neutral-content text-base",
+                    label { class: "label text-base",
                         input {
-                            class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                            class: "toggle bg-primary-content checked:text-primary",
                             r#type: "checkbox",
                             checked: airdrop_toggle(),
                             onchange: move |e| {
@@ -61,9 +61,9 @@ pub fn SettingsAlertsTab(props: SettingsAlertsTabProps) -> Element {
             // Toggle for heli alert
             li { class: "list-row",
                 fieldset { class: "fieldset",
-                    label { class: "label text-neutral-content text-base",
+                    label { class: "label text-base",
                         input {
-                            class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                            class: "toggle bg-primary-content checked:text-primary",
                             r#type: "checkbox",
                             checked: heli_toggle(),
                             onchange: move |e| {
@@ -77,9 +77,9 @@ pub fn SettingsAlertsTab(props: SettingsAlertsTabProps) -> Element {
             // Toggle for ch47 alert
             li { class: "list-row",
                 fieldset { class: "fieldset",
-                    label { class: "label text-neutral-content text-base",
+                    label { class: "label text-base",
                         input {
-                            class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                            class: "toggle bg-primary-content checked:text-primary",
                             r#type: "checkbox",
                             checked: ch47_toggle(),
                             onchange: move |e| {
@@ -93,9 +93,9 @@ pub fn SettingsAlertsTab(props: SettingsAlertsTabProps) -> Element {
             // Toggle for cargo alert
             li { class: "list-row",
                 fieldset { class: "fieldset",
-                    label { class: "label text-neutral-content text-base",
+                    label { class: "label text-base",
                         input {
-                            class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                            class: "toggle bg-primary-content checked:text-primary",
                             r#type: "checkbox",
                             checked: cargo_toggle(),
                             onchange: move |e| {
@@ -109,9 +109,9 @@ pub fn SettingsAlertsTab(props: SettingsAlertsTabProps) -> Element {
             // Toggle for shovel alert
             li { class: "list-row",
                 fieldset { class: "fieldset",
-                    label { class: "label text-neutral-content text-base",
+                    label { class: "label text-base",
                         input {
-                            class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                            class: "toggle bg-primary-content checked:text-primary",
                             r#type: "checkbox",
                             checked: shovel_toggle(),
                             onchange: move |e| {
@@ -125,9 +125,9 @@ pub fn SettingsAlertsTab(props: SettingsAlertsTabProps) -> Element {
             // Toggle for large oil rig alert
             li { class: "list-row",
                 fieldset { class: "fieldset",
-                    label { class: "label text-neutral-content text-base",
+                    label { class: "label text-base",
                         input {
-                            class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                            class: "toggle bg-primary-content checked:text-primary",
                             r#type: "checkbox",
                             checked: oil_rig_large_toggle(),
                             onchange: move |e| {
@@ -141,9 +141,9 @@ pub fn SettingsAlertsTab(props: SettingsAlertsTabProps) -> Element {
             // Toggle for small oil rig alert
             li { class: "list-row",
                 fieldset { class: "fieldset",
-                    label { class: "label text-neutral-content text-base",
+                    label { class: "label text-base",
                         input {
-                            class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                            class: "toggle bg-primary-content checked:text-primary",
                             r#type: "checkbox",
                             checked: oil_rig_small_toggle(),
                             onchange: move |e| {

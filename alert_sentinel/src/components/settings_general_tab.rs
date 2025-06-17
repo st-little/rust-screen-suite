@@ -33,7 +33,7 @@ pub fn SettingsGeneralTab(props: SettingsGeneralTabProps) -> Element {
             div { class: "flex items-center gap-4 mb-4",
                 label { class: "w-32 text-right font-medium", {t!("setting_language")} }
                 select {
-                    class: "select select-bordered w-64 text-gray-900",
+                    class: "select select-bordered w-64",
                     value: language(),
                     onchange: move |evt| {
                         language.set(evt.value());
@@ -55,7 +55,7 @@ pub fn SettingsGeneralTab(props: SettingsGeneralTabProps) -> Element {
             div { class: "flex items-center gap-4 mb-4",
                 label { class: "w-32 text-right font-medium", {t!("setting_timezone")} }
                 select {
-                    class: "select select-bordered w-64 text-gray-900",
+                    class: "select select-bordered w-64",
                     value: timezone(),
                     onchange: move |evt| {
                         timezone.set(evt.value());
@@ -83,12 +83,46 @@ pub fn SettingsGeneralTab(props: SettingsGeneralTabProps) -> Element {
             div { class: "flex items-center gap-4 mb-4",
                 label { class: "w-32 text-right font-medium", {t!("setting_theme")} }
                 select {
-                    class: "select select-bordered w-64 text-gray-900",
+                    class: "select select-bordered w-64",
                     value: theme(),
                     onchange: move |evt| {
                         theme.set(evt.value());
                     },
+                    option { value: "light", {t!("setting_light")} }
                     option { value: "dark", {t!("setting_dark")} }
+                    option { value: "cupcake", {t!("setting_cupcake")} }
+                    option { value: "bumblebee", {t!("setting_bumblebee")} }
+                    option { value: "emerald", {t!("setting_emerald")} }
+                    option { value: "corporate", {t!("setting_corporate")} }
+                    option { value: "synthwave", {t!("setting_synthwave")} }
+                    option { value: "retro", {t!("setting_retro")} }
+                    option { value: "cyberpunk", {t!("setting_cyberpunk")} }
+                    option { value: "valentine", {t!("setting_valentine")} }
+                    option { value: "halloween", {t!("setting_halloween")} }
+                    option { value: "garden", {t!("setting_garden")} }
+                    option { value: "forest", {t!("setting_forest")} }
+                    option { value: "aqua", {t!("setting_aqua")} }
+                    option { value: "lofi", {t!("setting_lofi")} }
+                    option { value: "pastel", {t!("setting_pastel")} }
+                    option { value: "fantasy", {t!("setting_fantasy")} }
+                    option { value: "wireframe", {t!("setting_wireframe")} }
+                    option { value: "black", {t!("setting_black")} }
+                    option { value: "luxury", {t!("setting_luxury")} }
+                    option { value: "dracula", {t!("setting_dracula")} }
+                    option { value: "cmyk", {t!("setting_cmyk")} }
+                    option { value: "autumn", {t!("setting_autumn")} }
+                    option { value: "business", {t!("setting_business")} }
+                    option { value: "acid", {t!("setting_acid")} }
+                    option { value: "lemonade", {t!("setting_lemonade")} }
+                    option { value: "night", {t!("setting_night")} }
+                    option { value: "coffee", {t!("setting_coffee")} }
+                    option { value: "winter", {t!("setting_winter")} }
+                    option { value: "dim", {t!("setting_dim")} }
+                    option { value: "nord", {t!("setting_nord")} }
+                    option { value: "sunset", {t!("setting_sunset")} }
+                    option { value: "caramellatte", {t!("setting_caramellatte")} }
+                    option { value: "abyss", {t!("setting_abyss")} }
+                    option { value: "silk", {t!("setting_silk")} }
                 }
             }
         }

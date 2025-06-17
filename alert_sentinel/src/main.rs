@@ -69,7 +69,7 @@ fn App() -> Element {
 
     // CSS class for the settings modal (handles open/close animation)
     let settings_class = format!(
-        "absolute top-0 left-0 w-full h-full bg-gray-900 text-neutral-content p-6 z-40 \
+        "absolute top-0 left-0 w-full h-full bg-base-100 p-6 z-40 \
         transition-all duration-300 origin-right {}",
         if show_settings() {
             "opacity-100 scale-x-100 pointer-events-auto"
@@ -82,14 +82,16 @@ fn App() -> Element {
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
         document::Link { rel: "stylesheet", href: DAISYUI_CSS }
 
-        div { class: "flex flex-col min-h-screen",
+        div {
+            class: "flex flex-col min-h-screen",
+            "data-theme": config.read().theme.as_str(),
             MainHeader {
                 config,
                 show_notification,
                 show_settings,
                 show_history,
             }
-            main { class: "relative flex-1 bg-gray-900 text-neutral-content p-6 flex flex-col gap-4",
+            main { class: "relative flex-1 bg-base-100 p-6 flex flex-col gap-4",
                 Alert { running, config, toast_queue }
                 div { class: settings_class,
                     Settings { config, show_settings, toast_queue }

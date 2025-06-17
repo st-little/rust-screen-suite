@@ -45,13 +45,13 @@ pub fn SettingsNotificationTab(props: SettingsNotificationTabProps) -> Element {
             h3 { class: "text-xl font-bold mb-4", {t!("setting_tab_notification")} }
             p { class: "opacity-60 mb-4", {t!("setting_desc_notification")} }
             div { class: "space-y-4",
-                div { class: "divider divider-info", {t!("setting_notification_sound")} }
+                div { class: "divider divider-secondary", {t!("setting_notification_sound")} }
                 // Toggle for enabling/disabling sound notifications
                 div { class: "flex items-center gap-4",
                     label { class: "w-48 text-right font-medium", {t!("setting_notification_sound")} }
                     input {
                         r#type: "checkbox",
-                        class: "toggle border-neutral-400 bg-neutral-300 checked:text-blue-500",
+                        class: "toggle bg-primary-content checked:text-primary",
                         checked: sound_enabled(),
                         onchange: move |e| {
                             sound_enabled.set(e.checked());
@@ -78,13 +78,13 @@ pub fn SettingsNotificationTab(props: SettingsNotificationTabProps) -> Element {
                 }
             }
             div { class: "space-y-4",
-                div { class: "divider divider-info", {t!("setting_notification_discord")} }
+                div { class: "divider divider-secondary", {t!("setting_notification_discord")} }
                 // Toggle for enabling/disabling Discord notifications
                 div { class: "flex items-center gap-4",
                     label { class: "w-48 text-right font-medium", {t!("setting_notification_discord")} }
                     input {
                         r#type: "checkbox",
-                        class: "toggle bg-neutral-300 checked:text-blue-500",
+                        class: "toggle bg-primary-content checked:text-primary",
                         checked: discord_enabled(),
                         onchange: move |e| {
                             discord_enabled.set(e.checked());

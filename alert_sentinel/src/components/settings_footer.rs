@@ -86,7 +86,7 @@ pub fn SettingsFooter(props: SettingsFooterProps) -> Element {
     } = props;
 
     rsx! {
-        footer { class: "flex justify-end gap-4 px-6 py-4 border-t border-gray-700",
+        footer { class: "flex justify-end gap-4 px-6 py-4",
             // Cancel button: closes the settings modal without saving
             button { class: "btn", onclick: move |_| show_settings.set(false), {t!("setting_cancel")} }
             // Save button: persists all settings and shows a toast on success or error

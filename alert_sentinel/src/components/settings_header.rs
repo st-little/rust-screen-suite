@@ -9,7 +9,7 @@ use dioxus_i18n::t;
 #[component]
 pub fn SettingsHeader(show_settings: Signal<bool>) -> Element {
     rsx! {
-        header { class: "flex justify-between items-center px-6 py-4 border-b border-gray-700",
+        header { class: "flex justify-between items-center px-6 py-4 border-b",
             h2 { class: "text-lg font-bold", {t!("setting_settings")} }
             // Close button for the settings modal
             button {
