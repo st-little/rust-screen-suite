@@ -1,3 +1,5 @@
+#![cfg_attr(feature = "bundle", windows_subsystem = "windows")]
+
 use dioxus::desktop::{Config, WindowBuilder};
 use dioxus::prelude::*;
 use dioxus_i18n::prelude::*;

@@ -65,7 +65,7 @@ npx license-checker-rseidelsohn --markdown > public/licenses/node-licenses.md
 To run for a different platform, use the `--platform platform` flag. E.g.
 
 ```bash
-dx build --release --platform desktop --package alert_sentinel
+dx build --release --platform desktop --package alert_sentinel --features bundle
 ```
 
 The binary will be located in `target\dx\alert_sentinel\release\windows\app\alert_sentinel.exe.`
