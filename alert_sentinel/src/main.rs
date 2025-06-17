@@ -130,7 +130,7 @@ fn App() -> Element {
                 }
             }
             MainFooter { running }
+            Toasts { toast_queue }
         }
-        Toasts { toast_queue }
     }
 }
