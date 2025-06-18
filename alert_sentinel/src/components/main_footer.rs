@@ -47,7 +47,7 @@ pub fn MainFooter(running: Signal<bool>) -> Element {
             div { class: "md:place-self-center text-sm text-center opacity-70", "© 2025 st-little" }
             // Version and GitHub link
             div { class: "grid-flow-col gap-4 md:place-self-center md:justify-self-end opacity-70",
-                p { "v0.1.0" }
+                p { "v0.2.0" }
                 a {
                     class: "mt-[2px]",
                     href: "https://github.com/st-little/rust-screen-suite",
