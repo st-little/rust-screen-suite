@@ -15,6 +15,7 @@ use std::{collections::VecDeque, time::Instant};
 pub struct SettingsFooterProps {
     pub config: Signal<AppConfig>,
     pub show_settings: Signal<bool>,
+    pub on_cancel: EventHandler,
     pub toast_queue: Signal<VecDeque<Toast>>,
     pub language: Signal<String>,
     pub theme: Signal<String>,
@@ -55,6 +56,7 @@ pub fn SettingsFooter(props: SettingsFooterProps) -> Element {
     let SettingsFooterProps {
         mut config,
         mut show_settings,
+        on_cancel,
         mut toast_queue,
         language,
         theme,
@@ -88,7 +90,14 @@ pub fn SettingsFooter(props: SettingsFooterProps) -> Element {
     rsx! {
         footer { class: "flex justify-end gap-4 px-6 py-4",
             // Cancel button: closes the settings modal without saving
-            button { class: "btn", onclick: move |_| show_settings.set(false), {t!("setting_cancel")} }
+            button {
+                class: "btn",
+                onclick: move |_| {
+                    on_cancel.call(());
+                    show_settings.set(false);
+                },
+                {t!("setting_cancel")}
+            }
             // Save button: persists all settings and shows a toast on success or error
             button {
                 class: "btn btn-primary",
