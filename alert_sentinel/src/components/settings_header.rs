@@ -7,14 +7,17 @@ use dioxus_i18n::t;
 /// # Props
 /// - `show_settings`: Signal to control the visibility of the settings modal.
 #[component]
-pub fn SettingsHeader(show_settings: Signal<bool>) -> Element {
+pub fn SettingsHeader(show_settings: Signal<bool>, on_close: EventHandler) -> Element {
     rsx! {
         header { class: "flex justify-between items-center px-6 py-4 border-b",
             h2 { class: "text-lg font-bold", {t!("setting_settings")} }
             // Close button for the settings modal
             button {
                 class: "btn btn-sm btn-ghost",
-                onclick: move |_| show_settings.set(false),
+                onclick: move |_| {
+                    on_close.call(());
+                    show_settings.set(false);
+                },
                 svg {
                     xmlns: "http://www.w3.org/2000/svg",
                     width: "16",
